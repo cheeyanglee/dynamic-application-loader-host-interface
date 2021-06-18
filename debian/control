@@ -1,0 +1,37 @@
+Source: jhi
+Priority: optional
+Maintainer: intel one ubuntu account <intel.one.ubuntu.account@intel.com>
+Uploaders: Lee Chee Yang <chee.yang.lee@intel.com>
+Build-Depends:
+ debhelper,
+ cmake,
+ pkg-config,
+ uuid-dev,
+ libxml2-dev,
+ systemd,
+ libsystemd-dev
+Standards-Version: 4.5.0
+Section: libs
+Vcs-Git: https://github.com/intel/dynamic-application-loader-host-interface
+Vcs-Browser: https://github.com/intel/dynamic-application-loader-host-interface
+Homepage: https://github.com/intel/dynamic-application-loader-host-interface
+
+Package: jhi
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Architecture: amd64
+Description: Intel Dynamic Application Loader (DAL) Host Interface --
+ daemon and libraries which allow user space applications
+ to install Java applets on DAL FW and communicate with them
+
+Package: jhi-tests
+Depends:
+ jhi (= ${binary:Version}),
+ ${shlibs:Depends},
+ ${misc:Depends}
+Architecture: amd64 
+Description: Intel Dynamic Application Loader (DAL) Host Interface --
+ daemon and libraries which allow user space applications
+ to install Java applets on DAL FW and communicate with them
+

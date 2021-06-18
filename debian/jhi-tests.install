@@ -1,0 +1,6 @@
+usr/bin/bist
+usr/bin/smoketest
+test/smoketest/applets/EventService.dalp  usr/lib/dal/applets/EventService.dalp
+test/smoketest/applets/echo.dalp  usr/lib/dal/applets/echo.dalp
+test/smoketest/applets/*.acp  usr/lib/dal/applets/
+test/smoketest/applets/echos usr/lib/dal/applets/echos/

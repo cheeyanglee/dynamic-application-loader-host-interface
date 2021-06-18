@@ -1,0 +1,7 @@
+usr/sbin/jhid
+usr/lib/*.so
+etc/jhi/jhi.conf
+lib/systemd/system/jhi.service
+usr/lib/tmpfiles.d/jhi.conf
+usr/lib/dal/applets/SpoolerApplet.dalp
+var/cache/dal/applet_repository
